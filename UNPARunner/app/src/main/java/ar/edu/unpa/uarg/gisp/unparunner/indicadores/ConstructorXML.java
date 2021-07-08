@@ -48,7 +48,7 @@ public class ConstructorXML {
 
             long fechaSistema = System.currentTimeMillis();
             String fechaFormateada = formateadorFecha.format(fechaSistema);
-            indicador = "<metrica nombre=\"" + indicador + "\" fecha=\"" + fechaFormateada + "\" lat=\"" + latitud + "\" lon=\"" + longitud + "\">" + valor + "</metrica>";
+            indicador = "<indicador nombre=\"" + indicador + "\" fecha=\"" + fechaFormateada + "\" lat=\"" + latitud + "\" lon=\"" + longitud + "\">" + valor + "</indicador>";
 
             bufferedWriter.append(indicador);
             bufferedWriter.newLine();
