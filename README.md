@@ -1,5 +1,5 @@
 # UNPA Runner
-UNPARunner es una aplicación similar a [Google Fit](https://play.google.com/store/apps/details?id=com.google.android.apps.fitness) (desarrollada durante el seminario de programación dictado en la UARG, 2019) con la librería **Q2MGPS** implantada. La librería **Q2MGPS** se encuentra subida en el repositorio "Q2MGPS" de gispunpauarg (se incluirá un enlace al repositorio próximamente).
+UNPARunner es una aplicación similar a [Google Fit](https://play.google.com/store/apps/details?id=com.google.android.apps.fitness) (desarrollada durante el seminario de programación dictado en la UARG, 2019) con la librería **Q2MGPS** implantada. La librería **Q2MGPS** se encuentra subida en el repositorio [Q2MGPS](https://github.com/gispunpauarg/Q2MGPS) de gispunpauarg.
 # Descarga
 Si desea descargar la aplicación para colaborar con la investigación, puede hacerlo mediante uno de estos dos botones.
 ## Si vive en RÍO GALLEGOS, haga clic este botón
