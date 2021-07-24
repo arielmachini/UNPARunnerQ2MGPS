@@ -246,13 +246,13 @@ public class Indicadores implements LocationListener { // , GpsStatus.Listener {
                     this.satelitesUtilizados = location.getExtras().getInt("satellites");
                 }
 
-                ConstructorXML.adjuntarIndicador("UbicacionLatencia", this.latitud, this.longitud, this.latenciaUbicacion + " ms");
+                ConstructorXML.adjuntarIndicador("UbicacionLatencia", this.latitud, this.longitud, this.latenciaUbicacion + "");
 
                 if (this.satelitesUtilizados > 0) {
                     ConstructorXML.adjuntarIndicador("UbicacionSatelites", this.latitud, this.longitud, this.satelitesUtilizados + "");
                 }
 
-                ConstructorXML.adjuntarIndicador("UbicacionPrecision", this.latitud, this.longitud, this.precisionUbicacion + " m");
+                ConstructorXML.adjuntarIndicador("UbicacionPrecision", this.latitud, this.longitud, this.precisionUbicacion + "");
 
                 this.informacionUltimaUbicacion = new java.util.HashMap<String, String>();
 
@@ -341,9 +341,8 @@ public class Indicadores implements LocationListener { // , GpsStatus.Listener {
                 /* Se registran los detalles en el archivo XML. */
                 ConstructorXML.adjuntarIndicador("ClimaUbicacion", latitud, longitud, climaActual.getUbicacion());
                 ConstructorXML.adjuntarIndicador("ClimaDescripcion", latitud, longitud, climaActual.getDescripcionClima());
-                ConstructorXML.adjuntarIndicador("ClimaPresion", latitud, longitud, climaActual.getDatosClima().getHumedad() + " hPa");
-                ConstructorXML.adjuntarIndicador("ClimaNubosidad", latitud, longitud, climaActual.getNubosidad() + "%");
-                ConstructorXML.adjuntarIndicador("ClimaTemperatura", latitud, longitud, climaActual.getDatosClima().getTemperatura() + "°C");
+                ConstructorXML.adjuntarIndicador("ClimaPresion", latitud, longitud, climaActual.getDatosClima().getPresionAtmosferica() + "");
+                ConstructorXML.adjuntarIndicador("ClimaNubosidad", latitud, longitud, climaActual.getNubosidad() + "");
 
                 Log.i("Clima", "Ubicación: " + climaActual.getUbicacion());
                 Log.i("Clima", "Clima (tipo): " + climaActual.getTipoClima());

@@ -18,6 +18,9 @@ public interface InfoClimaAPI {
     /* Coordenadas de Río Gallegos: */
     double latitud = -51.633333, longitud = -69.233333;
 
+    /* Coordenadas de CABA: */
+    // double latitud = -34.6131500, longitud = -58.3772300;
+
     String parametros = "?lat=" + latitud + "&lon=" + longitud + "&appid=" + apiKey + "&units=metric&lang=es";
 
     @GET("weather" + parametros)
