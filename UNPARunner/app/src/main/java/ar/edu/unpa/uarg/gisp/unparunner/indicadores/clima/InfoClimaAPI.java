@@ -24,6 +24,9 @@ public interface InfoClimaAPI {
     /* Coordenadas de San Isidro: */
     // double latitud = -34.4721, longitud = -58.52708;
 
+    /* Coordenadas de Punta Alta: */
+    // double latitud = -38.88000, longitud = -62.07500;
+
     String parametros = "?lat=" + latitud + "&lon=" + longitud + "&appid=" + apiKey + "&units=metric&lang=es";
 
     @GET("weather" + parametros)
